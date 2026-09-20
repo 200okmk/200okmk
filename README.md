@@ -9,10 +9,10 @@
 |項目|内容|
 |---|---|
 |名前|おくの|
-|経験職種|TS言語による中小規模Webアプリ開発（FE, BE, PaaSインフラなど）|
+|経験職種|中小規模Webアプリ開発（フロントエンドFE, バックエンドBE, PaaSインフラなど）|
 |実務年数|1年8ヶ月|
-|職務経歴書URL|[github.com/200okmk](https://github.com/200okmk)|
-|16タイプ|INTP論理学者|
+|職務経歴書URL|[github.com/200okmk](https://github.com/200okmk)（仮）|
+|主要技術|`TypeScript`, `React`, `TanStack Start`, `Next.js`, `TailwindCSS`, `DrizzleORM`, `Cloudflare`|
 
 ### 資格
 
@@ -28,9 +28,9 @@
 
 ## 職務要約
 
-社員10人ほどのWeb制作会社にて約1年半、TypeScript言語でのWebシステム開発案件を基本単独で主担当しました。UX向上や将来性の観点をもちながら機能仕様やUI改善などを自ら検討・提案することも心がけて来ました。具体的な主業務は**詳細仕様の検討と提案、技術選択、各種設計、フロントエンドFE, バックエンドBE, インフラ層の実装、ドキュメント作成、公開、継続保守など開発業務全般**です。その他並行業務として全社のHP制作案件ごとにホスト先PaaS立ち上げとDNS管理、既存開発案件の引き継ぎ保守、技術ブログ記事の執筆、エンジニア採用面接なども担当していました。
+社員10人ほどのWeb制作会社にて約1年半、TypeScript言語でのWeb開発案件を基本単独で主担当しました。UX向上や将来性の視点を持ち機能仕様やUI改善などを自ら検討・提案してきました。具体的な主業務は**詳細仕様の検討と提案、技術選択、各種設計、横断的にFE, BE, インフラ層の実装、ドキュメント作成、公開、継続保守など開発業務全般**です。その他並行業務として全社HP制作案件ごとにホスト先PaaS立ち上げとDNS管理、既存開発案件の引き継ぎ保守、技術記事の執筆、エンジニア採用面接なども担当していました。
 
-今後は中大規模プロダクトのバックエンドBE開発にキャリアの軸足を移したく、新たにJava言語と`SpringFramework`、AWSの資格勉強、書籍学習に励んでいます。
+今後は中大規模プロダクトのバックエンドBE開発にキャリアの軸足を移したく、新たにJava言語と`Spring`の習得、AWSの資格勉強、書籍学習などに励んでいます。
 
 <!--## 業務スキル-->
 
@@ -40,23 +40,25 @@
 
 ### フロントエンドFE
 
-`HTML`, `TailwindCSS`, `CSS`, `TypeScript`, `Astro`, `React19`, `TanStack Start/Router`, `Next.js AppRouter`, `Shadcn/ui`, `RadixUI`, `Zustand`, `TanStack Query/Table/Form`, `ReactHookForm`
+`HTML`, `TailwindCSS`, `CSSModules`, `TypeScript5`, `Astro`, `React19`, `TanStack Start/Router`, `Next.js14,15 AppRouter`, `Shadcn/ui`, `RadixUI`, `Zustand`, `TanStack Query/Table/Form`, `ReactHookForm`
 
 ### バックエンドBE
 
-`Node.js(TS)`, `Hono`, `NestJS`, `BetterAuth`, `Clerk`, `DrizzleORM`, `PrismaORM`, `Java`, `SpringBoot`,
+`Node.js22(TS)`, `Hono`, `NestJS`, `BetterAuth`, `Clerk`, `DrizzleORM`, `PrismaORM`, 
+
+`Java21`, `SpringBoot4(MVC, Web, Security, MyBatisORM, Thymeleaf)`, `JUnit6`
 
 `SQL`, `SQLite`, `PostgreSQL`, `NeonDB`, `Supabase ORM/DB/Auth/Storage`, `Slack API`, `Notion API`
 
 ### PaaS / AWS
 
-`Cloudflare Workers/Pages/D1/DNS`, `Vercel`, `Netlify`, `Render`,
+`Cloudflare Workers/Pages/D1/DNS`, `Vercel`, `Netlify`,
 
-`AWS Amplify`, `IAM`, `Lambda`, `S3`, `S3 Vectors`, `Bedrock KnowledgeBase`, `Bedrock Agents`, `EventBridge`, `SES`
+`AWS Amplify`, `EventBridge`, `SES`, `IAM`, `Lambda`, `S3`, `S3 Vectors`, `Bedrock KnowledgeBase`, `Bedrock Agents`
 
 ### その他 / DevOps
 
-`Zod`, `ESLint`, `Prettier`, `Biome`, `Husky`, `Github Actions`, `Docker`, `DevContainer`, `Mermaid`, `Turborepo`, `GraphQL`
+`Zod`, `ESLint`, `Prettier`, `Biome`, `Husky`, `Github Actions`, `Docker`, `Turborepo`, `GraphQL`
 
 ### ツール
 
