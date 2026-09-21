@@ -1,6 +1,6 @@
 # 職務経歴書
 
-最終更新: 2026/09/20
+最終更新: 2026/09/21
 
 ## プロフィール
 
@@ -11,7 +11,7 @@
 |名前|おくの|
 |経験職種|中小規模Webアプリ開発（フロントエンドFE, バックエンドBE, PaaSインフラなど）|
 |実務年数|1年8ヶ月|
-|職務経歴書URL|[github.com/200okmk](https://github.com/200okmk)（仮）|
+|職務経歴書URL|[github.com/200okmk](https://github.com/200okmk)|
 |主要技術|`TypeScript`, `React`, `TanStack Start`, `Next.js`, `TailwindCSS`, `DrizzleORM`, `Cloudflare`|
 
 ### 資格
@@ -28,9 +28,9 @@
 
 ## 職務要約
 
-社員10人ほどのWeb制作会社にて約1年半、TypeScript言語でのWeb開発案件を基本単独で主担当しました。UX向上や将来性の視点を持ち、機能仕様やUI改善なども常に自ら検討・提案してきました。具体的な主業務は**詳細仕様の検討と提案、技術選択、各種設計、横断的にFE, BE, インフラ層の実装、ドキュメント作成、公開、継続保守など開発業務全般**です。その他並行業務として全社HP制作案件ごとにホスト先PaaS立ち上げとDNS管理、既存開発案件の引き継ぎ保守、技術記事の執筆、エンジニア採用面接なども担当していました。
+社員10名ほどのWeb制作会社にて約1年半、TypeScript言語でのWeb開発を基本単独で主担当しました。UX向上や将来性の観点から、機能仕様やUI改善なども常に自ら検討・提案してきました。具体的な主業務は**詳細仕様の検討と提案、技術選択、各種設計、横断的にFE/BE/インフラ層の実装、ドキュメント作成、公開、継続保守など開発業務全般**です。その他並行業務として全社のHP制作案件ごとにホスト先PaaS立ち上げとDNS管理、既存開発案件の引き継ぎ保守、技術記事の執筆、エンジニア採用面接なども担当していました。
 
-今後は中大規模プロダクトのバックエンドBE開発にキャリアの軸足を移したく、新たにJava言語と`Spring`の習得、AWSの資格勉強、書籍学習などに励んでいます。
+今後は中大規模プロダクトのバックエンド開発にキャリアの軸足を移したく、新たにJava言語と`Spring`の習得、AWSの資格勉強、書籍学習などに励んでいます。
 
 <!--## 業務スキル-->
 
@@ -44,9 +44,9 @@
 
 ### バックエンドBE
 
-`Node.js22(TS)`, `Hono`, `NestJS`, `BetterAuth`, `Clerk`, `DrizzleORM`, `PrismaORM`, 
+`Node.js22(TS)`, `Hono`, `NestJS`, `DrizzleORM`, `PrismaORM`, `BetterAuth`, `Clerk`
 
-`Java21`, `SpringBoot4(MVC, Web, Security, MyBatisORM, Thymeleaf)`, `JUnit6`
+`Java21`, `SpringBoot4(MVC, Web, MyBatisORM, Security, Thymeleaf)`, `JUnit6`
 
 `SQL`, `SQLite`, `PostgreSQL`, `NeonDB`, `Supabase ORM/DB/Auth/Storage`, `Slack API`, `Notion API`
 
@@ -54,11 +54,11 @@
 
 `Cloudflare Workers/Pages/D1/DNS`, `Vercel`, `Netlify`,
 
-`AWS Amplify`, `EventBridge`, `SES`, `IAM`, `Lambda`, `S3`, `S3 Vectors`, `Bedrock KnowledgeBase`, `Bedrock Agents`
+`AWS Amplify`, `IAM`, `EventBridge`, `Lambda`, `SES`, `S3`, `S3 Vectors`, `Bedrock KnowledgeBase`, `Bedrock Agents`
 
 ### その他 / DevOps
 
-`Zod`, `ESLint`, `Prettier`, `Biome`, `Husky`, `Github Actions`, `Docker`, `Turborepo`, `GraphQL`
+`Zod4`, `ESLint`, `Prettier`, `Biome`, `Husky`, `Github Actions`, `Docker`, `Turborepo`, `GraphQL(Apollo, Codegen)`
 
 ### ツール
 
@@ -73,22 +73,29 @@
 
 #### 受講理由
 
-1. キャリアの軸足を小規模開発から中大規模プロダクトのバックエンド開発へ移行するためには、専用言語やフレームワーク、自動テストスキル、体系的な開発知見など根本的に新たな技術スタックと知見習得の必要性を強く感じていたため。
-2. 最も実践的で信頼できそうなカリキュラムだったため
+1. 前提として小規模開発から中大規模プロダクトのバックエンドBE開発へ本格的に移行するには、根本的に新たな技術スタックや体系的なIT基礎知識を習得する必要性を以前から強く感じていたため。
+2. 5つほど訓練内容を比較した中で最も実践的で信頼できそうなカリキュラムだったため
 
 #### 学習内容
+
+詳細は[こちらのPDF](../public/Java訓練カリキュラム7月分.pdf)をご参照下さい
 
 ##### CS基礎
 
 - 5大装置
 - 2進数と文字コード
-- Webの仕組み
-- など他
+- Webの仕組みなど他
+
+##### プロジェクトマネジメント
+
+- ウォーターフォール開発とアジャイル開発モデル
+- 各種テスト手法やVモデル
+- UML
 
 ##### Javaプログラミング
 
 - `Eclipse` IDE
-- `Java21` 基本文法
+- `Java21` 基本文法とパラダイム
 - オブジェクト指向（継承、多態性、カプセル化）
 - 自動テスト（`JUnit6`）
 
@@ -102,12 +109,6 @@
 - Spring基本概念（依存性注入、AOP、MVCモデルなど）
 - `Spring Web/MyBatisORM/Thymeleaf/Security` など各種モジュール
 - 数名でチーム開発（企画、設計、実装、テスト）
-
-##### プロジェクトマネジメント
-
-- ウォーターフォールとアジャイル開発モデル
-- モデルごとの各ステージとVモデル
-- UML
 
 </details>
 
