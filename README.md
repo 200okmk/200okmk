@@ -9,9 +9,11 @@
 |項目|内容|
 |---|---|
 |名前|おくの|
-|経験職種|中小規模Webアプリ開発（フロントエンドFE, バックエンドBE, PaaSインフラなど）|
+|経験職種・職域|中小規模Webアプリ開発（フロントエンドFE, バックエンドBE, PaaSインフラなど）|
 |実務年数|1年8ヶ月|
 |職務経歴書URL（仮）|[github.com/200okmk](https://github.com/200okmk)|
+|主要技術|[![icons](https://skillicons.dev/icons?i=html,tailwind,ts,vite,react,nextjs,nodejs,prisma,java,spring,postgres,supabase,cloudflare,aws,docker,figma&perline=8)](https://skillicons.dev)|
+|16タイプ|INTP論理学者|
 
 ### 資格
 
