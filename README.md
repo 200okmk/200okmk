@@ -9,7 +9,7 @@
 |項目|内容|
 |---|---|
 |名前|おくの|
-|経験職種・職域|中小規模Webアプリ開発（フロントエンドFE, バックエンドBE, PaaSインフラなど）|
+|経験職種・職域|中小規模Web開発（フロントエンドFE, バックエンドBE, PaaSインフラなど）|
 |実務年数|1年8ヶ月|
 |職務経歴書URL（仮）|[github.com/200okmk](https://github.com/200okmk)|
 |主要技術|[![icons](https://skillicons.dev/icons?i=html,tailwind,ts,vite,react,nextjs,nodejs,prisma,java,spring,postgres,supabase,cloudflare,aws,docker,figma&perline=8)](https://skillicons.dev)|
@@ -29,28 +29,60 @@
 
 ## 職務要約
 
-社員10名ほどのWeb制作会社にて約1年半、TypeScript言語での実装関連業務を基本単独で主担当しました。UX向上や将来性の観点から、機能仕様やUI改善なども常に自ら検討・提案してきました。具体的な主業務は**詳細仕様の検討と提案、技術選択、各種設計、横断的にFE/BE/インフラ層の実装、ドキュメント作成、公開、継続保守など開発業務全般**です。加えてその他業務として全社のHP制作案件ごとにホスト先PaaS立ち上げとDNS管理、既存開発案件の引き継ぎ保守、リンターやGitフローなど開発環境の検討と提案、技術記事の執筆、エンジニア採用面接などを担当しました。
+社員10名ほどのWeb制作会社にて約1年半、TypeScript言語での開発業務を基本単独で主担当しました。UX向上や将来性の観点から、機能仕様やUI改善なども常に自ら検討・提案してきました。具体的な主業務は**詳細仕様の検討と提案、技術選択、各種設計、横断的にFE/BE/インフラ層の実装、ドキュメント作成、公開、継続保守など開発業務全般**です。加えてその他業務として全社のHP制作案件ごとにホスト先PaaS立ち上げとDNS管理、既存開発案件の引き継ぎ保守、リンター設定など開発環境の整備と提案、技術記事の執筆、エンジニア採用面接などを担当しました。
 
 今後は中大規模プロダクトのバックエンド開発にキャリアの軸足を移したく、直近では新たにJava言語と`Spring`の習得、基本情報やAWSの資格勉強、書籍学習などに励んできました。
 
 <details>
   <summary><h2>業務スキル</h2></summary>
 
-### 要件ヒアリングと整理、詳細仕様の検討と提案
+**中小規模Web開発**におけるものです
 
-### 中小規模のRDBテーブル設計
+### 要求ヒアリングと整理、詳細仕様検討、技術選択
 
-### セマンティックHTMLとCSSスタイリングによるFigmaデザイン再現
+- ディレクターからの要望イメージのヒアリング
+- 大まかな機能要件整理
+- 詳細仕様検討と提案
+- （採用すべき主要技術の比較調査、技術選定、学習）
+- Notion上にMDドキュメント作成・運用
 
-セマンティックなHTMLスキルが、アクセシビリティというUXを担保する上で最も重要かつ根幹な技術であることを常に意識して、時には社内・社外のマークアップエンジニアに
+### RDBテーブル設計
 
-### URLパスとディレクトリ設計
+中間テーブル込みで10〜15程度の規模であれば、AI不使用でも要件定義済みの平文からERDを作成可能と判断されました
 
-### Reactコンポーネント設計
+- カラム設計（データ型や制約）
+- 各種リレーション
+- MermaidでのERD作成
 
-### 主にCRUD操作や認証認可などのバックエンド（API）開発
+### URLパスとディレクトリ設計、Reactコンポーネント設計など
 
-### PaaSインフラ立ち上げ、CD設定、DNSレコード管理
+- URLパス設計と修正（エンジニア主導でURLパス設計を行う提案と承認）
+- 関連物の凝集性を意識したディレクトリ設計
+- クラサバ境界に起因するセキュリティリスクとRSC維持を常に意識したReactコンポーネント設計
+
+### フロントエンドFE実装
+
+ヘッドレスUIライブラリ（`RadixUI`）とスタイル済みUIライブラリ（`Shadcn/ui`）の両方をデザイン要件に応じて使い分けて導入。セマンティクスとスタイル柔軟性を両立させながら実装工数を大幅に削減し高く評価されました（実際に[過去案件](https://tokyo.m-bike-mk.com/)の[2ページ](https://www.storageoh.jp/inquiry)を完全再現してコード例実績とビジネスメリットを提案）
+
+- セマンティックHTML（アクセシビリティUX担保）
+- `CSS Modules`スタイリングでFigmaデザイン再現、または`TailwindCSS`で微調整
+- 入力バリデーション定義、フォーム実装
+- クエリ文字列や`Zustand`などを用いた状態管理
+
+### CRUD操作や認証認可などのバックエンド開発
+
+- `Drizzle`, `Supabase`などORMによるCRUD操作
+- `BetterAuth`などで認証とアクセス制御認可
+- メール配信、GAS実行、RAG応答など外部APIの利用
+- 上記を`Next.js`などのServer Functionsとしてメソッド化、または`Hono`や`Astro`にてAPIエンドポイントとして実装
+
+### PaaSインフラ管理や移行、環境設定、DNS管理
+
+- `Cloudflare`立ち上げ、リダイレクトや認証保護の設定
+<!--- TODO: 本番環境にてリンク確認-->
+- 要件ヒアリングと各種DNSレコード設定（[職務経歴1-ex](https://github.com/200okmk#web%E5%88%B6%E4%BD%9C%E6%A1%88%E4%BB%B6%E3%81%94%E3%81%A8%E3%81%ABpaas%E3%81%A8dns%E3%81%AE%E7%AE%A1%E7%90%86202506---202601)）
+- Web開発案件にて2度のPaaSインフラ移行（[職務経歴1-3](https://github.com/200okmk#%E7%AD%86%E8%80%85%E3%81%AE%E6%8B%85%E5%BD%93%E6%A5%AD%E5%8B%99%E8%A9%B3%E7%B4%B0-2)）
+- 引き継ぎ既存案件の`AWS Ampllify`にて、新たにプレビュー環境構築と自社先方確認フローの改善（[職務経歴1-ex](https://github.com/200okmk#%E6%97%A2%E5%AD%98%E9%96%8B%E7%99%BA%E6%A1%88%E4%BB%B6%E3%81%AE%E5%BC%95%E7%B6%99%E3%81%8E%E4%BF%9D%E5%AE%88202510---202602)）
 
 </details>
 
@@ -69,11 +101,11 @@
 
 `Java21`, `SpringBoot4(MVC, Web, MyBatisORM, Security, Thymeleaf)`, `JUnit6`
 
-`SQL`, `SQLite`, `PostgreSQL`, `NeonDB`, `Supabase ORM/DB/Auth/Storage`, `Slack API`, `Notion API`
+`SQL`, `SQLite`, `PostgreSQL`, `NeonDB`, `Supabase ORM/DB/Auth/Storage`, `SwaggerUI`, `Slack API`, `Notion API`
 
 ### PaaS / AWS
 
-`Cloudflare Workers/Pages/D1/DNS`, `Vercel`, `Netlify`,
+`Cloudflare Workers/Pages/D1/DNS/Access`, `Vercel`, `Netlify`,
 
 `AWS Amplify`, `IAM`, `EventBridge`, `Lambda`, `SES`, `S3`, `S3 Vectors`, `Bedrock KnowledgeBase`, `Bedrock Agents`
 
@@ -81,9 +113,9 @@
 
 `Zod4`, `ESLint`, `Prettier`, `Biome`, `Husky`, `Github Actions`, `Docker(+compose)`, `Turborepo`, `GraphQL(ApolloServer, Codegen)`
 
-### ツール
+### ツール（MacOS）
 
-`MacOS`, `Zsh`, `Ghostty`, `Zed`, `Cursor`, `VSCode`, `Eclipse`, `Github`, `Notion`, `Slack`, `MicroCMS`, `Figma`
+`Homebrew`, `Zsh`, `Ghostty`, `Zed`, `Cursor`, `VSCode`, `Eclipse`, `Github`, `Notion`, `Slack`, `MicroCMS`, `Figma`, `Raycast`
 
 </details>
 
@@ -336,8 +368,8 @@
   - 各種CRUD操作
   - メール送信、GASによる集計など
 - ホスト先PaaSのセットアップ、および2度の移行
-  1. 月額シートコスト削減打診を受け、`Vercel`から`Cloudflare Pages`へ移行。Nodeからエッジへのランタイム移行に伴うコード修正、Pagesデプロイ用ライブラリ導入など実施
-  2. `Next.js`の脆弱性発表に伴い、新バージョン不対応のPagesデプロイ用ライブラリ入れ替えと`Cloudflare Workers`への移行。`OpenNext`ライブラリの調査・導入など実施
+  1. 月額シートコスト削減打診を受け、`Vercel`から`Cloudflare Pages`へ移行。`Node.js`からエッジへのランタイム移行に伴うコード修正、Pagesデプロイ用ライブラリ導入など実施
+  2. `Next.js`の脆弱性発表に伴い、新バージョン不対応のPagesデプロイ用ライブラリ入れ替えと`Cloudflare Workers`への移行。`OpenNext`アダプタの調査・導入など実施
 - 属人性低下させるためドキュメント作成（下記④）
 - リリース時にプロダクト紹介ご訪問
 - リリース後の追加要望対応など継続保守
@@ -420,10 +452,10 @@
 
 ##### 既存開発案件の引継ぎ保守【2025/10 - 2026/02】
 
-リリースから既に1年弱経過したトランクルーム予約ポータルサイト案件を引継ぎ、**バグ発見と修正、社内・先方確認フローの改善、定型作業など**を行いました。上記の1案件目と同時期に開始したFE受託開発案件です（BEは外注）。
+リリースから既に1年弱経過したトランクルーム予約ポータルサイト案件を引継ぎ、**バグ発見と修正、社内・先方確認フローの改善、定型保守作業など**を行いました。上記の1案件目と同時期に開始した、FEのみ受託開発案件です（BE実装は外注）。
 
 - バグ発見・修正
-  - FEとAPI間で部屋ID仕様の考慮漏れが原因で、約10店舗150部屋以上がリリース以来選択不可状態だったことを発見。該当コードを修正し全件解消
+  - 弊社FEアプリとBEアプリ間で部屋ID仕様の考慮漏れが原因で、約10店舗150部屋以上がリリース以来選択不可状態だったことを発見。該当コードを全て修正し全件解消
 - 社内・先方確認フローの改善
   - 従来は作業ブランチをステージング環境にマージしてから社内と先方へ確認出し、修正があれば再度作業ブランチ作成を行っていた。そこでコードプッシュごとに作業ブランチ単位でビルド＆プレビュー環境URLが発行されるようホスト先PaaS(`AWS Amplify`)を設定。これにより先方確認まで完了後にマージできるようになりブランチ運用を効率化
 
