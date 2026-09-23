@@ -113,11 +113,11 @@
 
 ### その他 / DevOps
 
-`Zod4`, `ESLint`, `Prettier`, `Biome`, `Husky`, `Github Actions`, `Docker(+compose)`, `Turborepo`, `GraphQL(ApolloServer, Codegen)`
+`Zod4`, `ESLint`, `Prettier`, `Biome`, `Pnpm`, `Husky`, `Github Actions`, `Docker(+compose)`, `Turborepo`, `GraphQL(ApolloServer, Codegen)`
 
 ### ツール（MacOS）
 
-`Homebrew`, `Zsh`, `Ghostty`, `Zed`, `Cursor`, `VSCode`, `Eclipse`, `Github`, `Notion`, `Slack`, `MicroCMS`, `Figma`, `Raycast`
+`Zsh`, `Mise`, `Ghostty`, `Zed`, `Cursor`, `VSCode`, `Eclipse`, `Github`, `Notion`, `Slack`, `MicroCMS`, `Figma`, `Raycast`
 
 </details>
 
@@ -491,7 +491,7 @@
 |リポジトリ名・使用技術|概要|こだわり・備考|
 |---|---|---|
 |[full-tanstack-starter](https://github.com/200okmk/full-tanstack-starter) <br><br> `TypeScript`, `React19`, `TanStack Start/Query/Form`, `TailwindCSS`, `BetterAuth`, `DrizzleORM`, `Vite`, `NeonDB`, `Cloudflare`, `Github Actions` etc.|TSフルスタックWebアプリ開発テンプレ。|**今後のAIコーディングツール使用を前提に、ドキュメント運用手法を学習中**です。使用技術や設計は随時変更予定です|
-|[discord-clone](https://github.com/200okmk/discord-clone)（停止中） <br><br> `TypeScript`, `React18`, `Next.js13`, `TailwindCSS`, `Zustand`, `Clerk`, `PrismaORM`, `Socket.io`, `Docker`, `Render`, etc.|未経験転職のポートフォリオ用に作成した最初のWebアプリ。機能は基本的なチャットIF、コミュニティや会話チャンネルの作成・招待追放・管理などのCRUD操作、WebSocketによるリアルタイム通信、ビデオ通話、フルレスポンシブUI、ダークモード、ランディングページなどです。|<br>未経験とはいえ**チーム開発や保守性への意識も妥協せず、有効そうな仕組みを適宜リサーチ・導入するなど当時の限界まで様々な技術的挑戦をしました**。具体的には、アプリ本体と本番DB両方をDockerコンテナ化して可搬性向上、開発環境も丸ごとDockerコンテナ化して再現性を高めるDevContainerの作成、`Github Projects`を使用してタスクごとにバックログ作成＆管理してみた一人擬似アジャイル？などです。また最初から全ての記録を英語にしていたことが功を奏し、海外の同じ駆け出しエンジニア数名からとても感謝されたことも非常に嬉しい出来事でした|
+|[discord-clone](https://github.com/200okmk/discord-clone)（停止中） <br><br> `TypeScript`, `React18`, `Next.js13`, `TailwindCSS`, `Zustand`, `Clerk`, `PrismaORM`, `Socket.io`, `Docker`, `Render`, etc.|未経験転職のポートフォリオ用に作成した最初のWebアプリ。機能は基本的なチャットIF、コミュニティや会話チャンネルの作成・招待追放・管理などのCRUD操作、WebSocketによるリアルタイム通信、ビデオ通話、フルレスポンシブUI、ダークモード、ランディングページなどです。|<br>未経験とはいえ**チーム開発や保守性への意識も妥協せず、有効そうな仕組みを適宜リサーチ・導入するなど当時の限界まで様々な技術的挑戦をしました**。具体的には、アプリ本体と本番DB両方をDockerコンテナ化して可搬性向上、開発環境も丸ごとDockerコンテナ化して再現性を高めるDevContainerの作成、`Github Projects`を使用してタスクごとにバックログ作成＆管理してみた一人擬似アジャイル？などです。 <br> また最初から全ての記録を英語にしていたことが功を奏し、海外の同じ駆け出しエンジニア数名からとても感謝されたことも非常に嬉しい出来事でした|
 |[next13-nestjs-graphql](https://github.com/200okmk/next13-nest-graphql) <br><br> `TypeScript`, `React18`, `Next.js`, `NestJS`, `PrismaORM`, `GraphQL`, `Apollo`, `Turborepo`, `Docker`, etc.|Next.js(FE)やNestJS(BE)など主要フレームワークと、`GraphQL`や`モノレポ構成`を学ぶためのプロジェクト。2022年当時頻繁に目にしたこれらに興味を持ってしまい、結果半年以上費やしてしまった成れの果て。|<br>当然ですが**GraphQLは、単一言語でのフルスタックWebアプリ開発には過剰な技術**。薄々理解はしていたためしばらく経ったのち反省。「熱意だけはある未経験者が独学で技術を学ぶ際のリスク」を経験できたことを教訓にしたいです|
 
 ### 技術ブログ
