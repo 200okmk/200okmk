@@ -11,7 +11,7 @@
 |名前|おくの|
 |経験職種・職域|中小規模Web開発（フロントエンドFE, バックエンドBE, PaaSインフラなど）|
 |実務年数|1年8ヶ月|
-|職務経歴書URL（仮）|[github.com/200okmk](https://github.com/200okmk)|
+|職務経歴書URL|[github.com/200okmk](https://github.com/200okmk)|
 |主要技術スタック|[![icons](https://skillicons.dev/icons?i=html,tailwind,ts,vite,react,nextjs,nodejs,prisma,java,spring,postgres,supabase,cloudflare,aws,docker,figma&perline=8)](https://skillicons.dev)|
 |16タイプ|INTP論理学者|
 
@@ -136,7 +136,7 @@
 #### 学習内容
 
 <!--TODO: 本番環境でリンク確認・修正-->
-カリキュラム詳細は[こちら](https://github.com/200okmk/200okmk/blob/main/public/Java訓練カリキュラム.pdf)（5月開講分と全く同じ内容です）
+カリキュラム詳細は![こちら](/public/Java訓練カリキュラム.pdf)（5月開講分と全く同じ内容です）
 
 ##### CS基礎座学
 
@@ -490,7 +490,7 @@
 
 |リポジトリ名・使用技術|概要・機能|注力・備考|
 |---|---|---|
-|[full-tanstack-starter](https://github.com/200okmk/full-tanstack-starter) <br><br>`TypeScript`, `React19`, `TanStack Start/Router/Query`, `TailwindCSS`, `BetterAuth`, `DrizzleORM`, `Vite`, `NeonDB`, `Netlify`, `GithubActions` etc.|脱Next.jsの集大成として作成した自分用Webアプリテンプレ <br><br>主な機能は初期RDBスキーマとORM設定、OAuth認証、メアドパスワード認証、アプリ本体とDBの即デプロイ設定、ブランチ完全連動のCI/CD運用（ステージングと本番の2環境）、フルレスポンシブUI、ダークモードなど|**アーキテクチャや実装方針の熟慮と実装、[その明文化（手書き）](https://github.com/200okmk/full-tanstack-starter/tree/main/.cursor/rules)に半年ほどかけて挑戦**。AIコーディング制御の訓練目的でもありました。<br>1.　常にDBスキーマを唯一の情報源（Single Source of Truth）とし、データ関連定義の分散を徹底的に防ぐSSOT戦略。具体的にはRDBスキーマからZodスキーマとTS型を自動生成して使いまわす<br>2.　親コンポーネントのUIレンダリングをブロックしない非同期データフェッチとキャッシュ設計、クエリ文字列を第一の状態管理ソースとする方針、ディレクトリ設計などの`TanStack Router/Query`運用戦略<br>3.　`本番`, `開発統合`, `各作業`の3層ブランチ構造に連動させた、各環境自動ビルドとCI/CD戦略<br>4.　デザインシステム、アクセシビリティなどのUI構築戦略<br><br>AIハーネス関連の構成や書式が常に変化し続けることは作成当初から予想していたので、それ以外の「学習と実装」に注力しました。文書としてのツッコミどころはたくさんあろうかと思います。
+|[full-tanstack-starter](https://github.com/200okmk/full-tanstack-starter) <br><br>`TypeScript`, `React19`, `TanStack Start/Router/Query`, `TailwindCSS`, `BetterAuth`, `DrizzleORM`, `Vite`, `NeonDB`, `Netlify`, `GithubActions` etc.|脱Next.jsの集大成として作成した自分用Webアプリテンプレ <br><br>主な機能は初期RDBスキーマとORM設定、OAuth認証、メアドパスワード認証、アプリ本体とDBの即デプロイ設定、自動マイグレーションと自動ビルドのCD（ステージングと本番の2環境）、フルレスポンシブUI、ダークモードなど|**アーキテクチャや実装方針の熟考、実装、明文化までを半年かけて挑戦しました**。<br>1. 常にDBスキーマを唯一の情報源（Single Source of Truth）とし、エンティティ関連の多重定義と分散を防ぐ[SSOT戦略](https://github.com/200okmk/full-tanstack-starter/blob/main/docs/drizzle-zod-ssot.md)。具体的にはRDBスキーマからZodスキーマとTS型を自動生成して使いまわすもの<br>2. 親コンポーネントのUIレンダリングをブロックしない非同期データフェッチとキャッシュ設計、クエリ文字列を第一の状態管理ソースとする方針、ディレクトリ設計などを定義した[`TanStack`運用戦略](https://github.com/200okmk/full-tanstack-starter/blob/main/docs/tanstack-router.md)<br>3. `本番`, `開発統合`, `各作業`の3層ブランチ構造に連動させた、各環境自動ビルド[CD戦略](https://github.com/200okmk/full-tanstack-starter/blob/main/docs/gitflow-hosting-cd.md)<br>4. デザインシステム、アクセシビリティなどの[UI構築戦略](https://github.com/200okmk/full-tanstack-starter/blob/main/docs/ui.md)<br><br>LLMの性能向上によるこれら文書の陳腐化リスクを承知の上で、**学習アウトプットとコーディングAI制御の練習を目的**として作成しました
 |[discord-clone](https://github.com/200okmk/discord-clone)（停止中） <br><br>`TypeScript`, `React18`, `Next.js13`, `TailwindCSS`, `Zustand`, `Clerk`, `PrismaORM`, `Socket.io`, `Docker`, `Render`, etc.|未経験転職のポートフォリオ用に作成した最初のWebアプリ。<br><br>主な機能は基本的なチャットIF、コミュニティや会話チャンネルの作成・招待追放・管理などのCRUD操作、WebSocketによるリアルタイム通信、ビデオ通話、フルレスポンシブUI、ダークモード、ランディングページなど|未経験とはいえ**チーム開発や保守性への意識も妥協せず、有効そうな仕組みを適宜リサーチ・導入するなど当時の限界まで様々な技術的挑戦をしました**。具体的には、アプリ本体と本番DB両方をDockerコンテナ化して可搬性向上、開発環境も丸ごとDockerコンテナ化して再現性を高めるDevContainerの作成、`Github Projects`を使用してタスクごとにバックログ作成＆管理してみた一人擬似アジャイル？などです。 <br>また最初から全ての記録を英語にしていたことが功を奏し、海外の同じ駆け出しエンジニア数名からとても感謝されたことも非常に嬉しい出来事でした|
 |[next13-nestjs-graphql](https://github.com/200okmk/next13-nest-graphql) <br><br>`TypeScript`, `React18`, `Next.js`, `NestJS`, `PrismaORM`, `GraphQL`, `Apollo`, `Turborepo`, `Docker`, etc.|Next.js(FE)やNestJS(BE)など主要フレームワークと、`GraphQL`や`モノレポ構成`を学ぶためのプロジェクト。2022年当時頻繁に目にしたこれらに興味を持ってしまい、結果半年以上費やしてしまった成れの果て。|<br>当然ですが**GraphQLは、単一言語でのフルスタックWebアプリ開発には過剰な技術**。薄々理解はしていたためしばらく経ったのち反省。「熱意だけはある未経験者が独学で技術を学ぶ際のリスク」を経験できたことを教訓にしたいです|
 
