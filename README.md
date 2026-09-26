@@ -91,7 +91,7 @@
 </details>
 
 <details>
-  <summary><h2>技術スキル</h2></summary>
+  <summary><h2>技術スタック</h2></summary>
 
 個人学習した技術も含めています。
 
