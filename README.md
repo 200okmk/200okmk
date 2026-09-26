@@ -133,7 +133,7 @@
 #### 受講理由
 
 1. 小規模Web開発から中大規模プロダクトのバックエンドBE開発へ本格的に移行するには、根本的に新たな技術スタックや体系的なIT基礎知識などを習得する必要性を以前から強く感じていたため
-2. 未経験時代に「学習量が大きいかつ未知な技術」の全体像や特性の理解がないまま独学に熱中した結果、大きく回り道してしまった教訓があるため
+2. 未経験時代に「学習量が大きいかつ未知な技術」の全体像や特性の理解がないまま独学に熱中した結果、大きく回り道してしまった[教訓](#独学のリスク)があるため
 3. 5つほど訓練を比較した中で最も実践的で信頼できそうなカリキュラムだったため
 
 #### 学習内容
@@ -499,7 +499,7 @@
 |---|---|---|
 |[full-tanstack-starter](https://github.com/200okmk/full-tanstack-starter) <br><br>`TypeScript`, `React19`, `Vite`, `TanStack Start/Router/Query/Form`, `TailwindCSS`, `Shadcn/ui`, `Zod`, `DrizzleORM`, `BetterAuth`, `Docker`, `NeonDB`, `Netlify`, `GithubActions` etc.|脱Next.jsの集大成として作成した自分用Webアプリテンプレです。 <br><br>主な機能：<br>- 初期RDBスキーマとORM設定<br>- OAuth認証とメアドパスワード認証<br>- アプリ本体とDBの即デプロイ設定<br>- 自動マイグレーションと自動ビルドのCD（ステージングと本番の2環境）<br>- フルレスポンシブUI<br>- ダークモード<br>- 404と例外キャッチなど|**使用技術の学習と実装、アーキテクチャや実装方針の熟考と明文化に半年かけて挑戦しました**。<br>1. 常にDBスキーマを唯一の情報源（Single Source of Truth）とし、エンティティ関連の多重定義と分散を防ぐ[SSOT戦略](https://github.com/200okmk/full-tanstack-starter/blob/main/docs/drizzle-zod-ssot.md)。具体的にはRDBスキーマからZodスキーマとTS型を自動生成して使いまわすもの<br>2. 親コンポーネントのUIレンダリングをブロックしない非同期データフェッチとキャッシュ設計、ディレクトリ設計、UI状態管理ソースとしてのクエリパラメータ活用などを定義した[`TanStack`運用戦略](https://github.com/200okmk/full-tanstack-starter/blob/main/docs/tanstack-router.md)<br>3. `本番`, `開発統合`, `各作業`の3層ブランチ構造に連動させた各環境自動ビルド[CD戦略](https://github.com/200okmk/full-tanstack-starter/blob/main/docs/gitflow-hosting-cd.md)<br>4. デザインシステム、アクセシビリティなどの[UI構築戦略](https://github.com/200okmk/full-tanstack-starter/blob/main/docs/ui.md)<br><br>将来的なLLMの性能向上によるこれら文書の陳腐化リスクを承知の上で、**学習アウトプットとコーディングAI制御の練習を目的**として作成しました
 |[discord-clone](https://github.com/200okmk/discord-clone)（停止中） <br><br>`TypeScript`, `React18`, `Next.js13`, `TailwindCSS`, `Shadcn/ui`, `Motion`, `Three.js`, `Zustand`, `ReactHookForm`, `Zod`, `PrismaORM`, `Clerk`, `Socket.io`, `Livekit`, `Uploadthing`, `Docker`, `Render` etc.|未経験転職時のポートフォリオとして作成した最初のWebアプリです。<br><br>主な機能：<br>- WebSocket通信によるリアルタイムチャット（グループとDM）<br>- 画像とPDFの送信<br>- ビデオ通話<br>- コミュニティと会話チャンネルの作成・編集・削除<br>- メンバー招待・追放<br>- OAuth認証とメアドパスワード認証<br>- フルレスポンシブUI<br>- ダークモード<br>- フォーム入力検証<br>- ランディングページなど|アプリ機能の充実はもちろん、DevOpsや細やかな開発記録など**保守性やチーム開発も意識した実践的かつ実直な開発を当時の限界まで挑戦しました**。<br>1. アプリ本体、DB、開発環境をDockerコンテナ化して再現性向上<br>2. ホスト先プラットフォームの設定をIaC化して保守性向上<br>3. 自動でDBマイグレーション、本番Dockerイメージビルド、コンテナレジストリにプッシュまで一貫するCDパイプライン<br>4. `Github Projects`上でタスクごとにバックログやIssueの作成、PR作成、マージしてクローズなど一人擬似アジャイル？の練習<br><br>余談ですが最初から全ての記述を英語にしていたことが功を奏し、海外の同じ駆け出しエンジニア数名からとても感謝されたのは非常に嬉しい出来事でした|
-|[next13-nestjs-graphql](https://github.com/200okmk/next13-nest-graphql) <br><br>`TypeScript`, `React18`, `Next.js`, `NestJS`, `PrismaORM`, `GraphQL`, `Apollo`, `Turborepo`, `Docker`, etc.|左記主要フレームワーク、`GraphQL` APIと関連ライブラリ、`モノレポ構成`などを学習した成れの果てプロジェクト|言わずもがな`GraphQL`やモノレポは、単一言語によるフルスタックWebアプリ開発には過剰な技術。未経験エンジニアが2022年当時の流行技術に強く興味を持った結果、半年以上費やし大きく回り道をしました。<br><br>**「未知な技術を独学で学ぶ際はリスクが伴う」** という教訓を得たため、のちに「職業訓練校でJavaを学んでみる」という選択につながりました|
+|[next13-nestjs-graphql](https://github.com/200okmk/next13-nest-graphql) <br><br>`TypeScript`, `React18`, `Next.js`, `NestJS`, `PrismaORM`, `GraphQL`, `Apollo`, `Turborepo`, `Docker`, etc.|左記主要フレームワーク、`GraphQL` APIと関連ライブラリ、`モノレポ構成`などを学習した成れの果てプロジェクト|言わずもがな`GraphQL`やモノレポは、単一言語によるフルスタックWebアプリ開発には過剰な技術。未経験エンジニアが2022年当時の流行技術に強く興味を持った結果、半年以上費やし大きく回り道をしました。<br><br>**「未知な技術を独学で学ぶ際はリスクが伴う」** という<span id="独学のリスク">教訓</span>を得たため、のちに「職業訓練校でJavaを学んでみる」という選択につながりました|
 
 ### 技術記事の執筆
 
