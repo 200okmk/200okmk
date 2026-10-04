@@ -104,7 +104,7 @@
 
 `Node.js22(TS)`, `Hono`, `NestJS`, `DrizzleORM`, `PrismaORM`, `BetterAuth`, `Clerk`
 
-`Java21`, `SpringBoot4(Web, MyBatisORM, Security, Thymeleaf)`, `JUnit6`
+`Java21`, `SpringBoot4(Web, MyBatisORM, Security, Thymeleaf)`, `JUnit5`
 
 `SQL`, `SQLite`, `PostgreSQL`, `NeonDB`, `Supabase ORM/DB/Auth/Storage`, `SwaggerUI`
 
@@ -159,7 +159,7 @@
 - `Eclipse` IDE
 - `Java21`の基本文法、応用(例外処理、ファイル入出力など他)
 - オブジェクト指向（継承、多態性、カプセル化）
-- 自動テスト（`JUnit6`）
+- 単体テスト（`JUnit5`）
 
 ##### RDB(Postgres)とSQL実践
 
